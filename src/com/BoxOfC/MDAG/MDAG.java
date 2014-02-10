@@ -138,10 +138,13 @@ public class MDAG
         }
         /////
 
-        //Since we delay the minimization of the previously-added String
-        //until after we read the next one, we need to have a seperate
-        //statement to minimize the absolute last String.
-        replaceOrRegister(sourceNode, previousString);
+        if(strCollection.size() > 0)
+        {
+            //Since we delay the minimization of the previously-added String
+            //until after we read the next one, we need to have a seperate
+            //statement to minimize the absolute last String.
+            replaceOrRegister(sourceNode, previousString);
+        }
     }
     
     
