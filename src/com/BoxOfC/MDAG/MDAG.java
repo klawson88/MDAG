@@ -145,6 +145,13 @@ public class MDAG
     }
     
     
+    /**
+     * Create an empty MDAG
+     */
+    public MDAG()
+    {
+
+    }
     
      /**
      * Creates an MDAG from a collection of Strings.
